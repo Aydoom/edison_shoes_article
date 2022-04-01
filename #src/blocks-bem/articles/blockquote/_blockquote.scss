@@ -1,0 +1,20 @@
+.blockqute {
+    padding: 40px;
+    margin-bottom: 120px;
+    background-image: url("../img/blockquote-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__quote {
+        font-family: Prosto One, serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 31.2px;
+        text-align: center;
+        color:#FCFCFC;
+        padding-bottom: 15px;
+    }
+    &__author {
+        color:#CACDE0;
+        text-align: center;
+    }
+}

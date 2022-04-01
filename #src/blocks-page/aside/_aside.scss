@@ -1,0 +1,16 @@
+.aside {
+    max-width: 230px;
+    margin: 0 auto;
+    &__promo {
+        margin-bottom: 40px;
+    }
+    @media (max-width: 945px) {
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+/** ПОДКЛЮЧАЕМЫЕ БЛОКИ **/
+@import '../../blocks-bem/aside/promo/_promo.scss';

@@ -1,0 +1,15 @@
+.articles {
+    &__list {
+        margin-top: 70px;
+    }
+    &__title {
+        margin: 0;
+        text-align: justify;
+    }
+    &__text {
+        text-align: justify;
+    }
+}
+/** ПОДКЛЮЧАЕМЫЕ БЛОКИ **/
+@import '../../blocks-bem/articles/article/_article.scss';
+@import '../../blocks-bem/articles/blockquote/_blockquote.scss';

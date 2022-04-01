@@ -1,0 +1,31 @@
+.catalog {
+    &__top-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 56px;
+    }
+    &__title {
+        margin: 0;
+        margin-right: auto;
+
+    }
+    &__link {
+        position: relative;
+        bottom: 5px;
+        margin-left: auto;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #4D66EC;
+    }
+    &__body {
+        padding-bottom: 120px;
+    }
+}
+
+/** ПОДКЛЮЧАЕМЫЕ БЛОКИ **/
+@import '../../blocks-bem/catalog/cards/_cards.scss';

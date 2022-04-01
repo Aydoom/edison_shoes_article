@@ -1,0 +1,121 @@
+/** БАЗОВЫЕ ФУНКЦИИ **/
+@import "_mixins.scss";
+
+/** ПЕРЕМЕННЫЕ **/
+$primary-color: #2F3250;
+$secondary-color: #4D66EC;
+$third-color:#FCFCFC;
+
+/** ОСНОВНЫЕ СТИЛИ **/
+body {
+	margin: 0;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+}
+h1 {
+	font-family: Prosto One, serif;
+	font-weight: 400;
+	font-size: 76px;
+	list-style: 83.6px;
+	color: #2F3250;
+}
+h2 {
+	font-family: Prosto One, serif;
+	font-weight: 400;
+	font-size: 34px;
+	list-style: 34px;
+	color: #2F3250;
+}
+
+h3 {
+	font-family: Prosto One, serif;
+	font-weight: 400;
+	font-size: 20px;
+	list-style: 20px;
+	color: #2F3250;
+}
+
+h4 {
+}
+
+a {
+	font-family: Manrope, serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 14px;
+	color:#404254;
+}
+p, address, label, span {
+	font-family: Manrope, serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color:#404254;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	&__header {
+    	background-color: blue;
+	}
+	&__body {
+	}
+	&__catalog {
+		grid-column: 1/-1;
+	}
+	&__footer {
+	}
+}
+.container {
+	max-width: 1250px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 100%;
+	margin: 0 auto;
+	&__body {
+		display: grid;
+		grid-template-columns: 310px auto 210px;
+		padding-top: 80px;
+		@media (max-width: 1100px) {
+			grid-template-columns: 320px auto;
+			padding-right: 40px;
+		}
+		@media (max-width: 945px) {
+			display: flex;
+			flex-direction: column;
+			padding-right: 40px;
+		}
+
+	}
+}
+.fullscreen {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: 100% 100%; 
+}
+
+/** ПОДКЛЮЧАЕМ СТАНДАРТНЫЕ БЛОКИ **/
+@import "_btn.scss";
+@import "_card.scss";
+
+/** ПОДКЛЮЧАЕМЫЕ БЛОКИ СЕКЦИЙ **/
+@import "../blocks-page/header/_header.scss";
+@import "../blocks-page/aside/_aside.scss";
+@import "../blocks-page/articles/_articles.scss";
+@import "../blocks-page/catalog/_catalog.scss";
+@import "../blocks-page/footer/_footer.scss";

@@ -1,0 +1,26 @@
+.pay {
+    display: grid;
+    grid-template-columns: 116px auto;
+    gap: 30px;
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    &__item {
+        width: 34px;
+        height: 24px;
+        gap: 30px;
+    }
+    &__link {
+
+    }
+}

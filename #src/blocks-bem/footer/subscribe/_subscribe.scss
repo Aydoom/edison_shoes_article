@@ -1,0 +1,22 @@
+.subscribe {
+    &__desc {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #404254;
+        margin-bottom: 21px;
+    }
+    &__email {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 18px 37px 18px 17px;
+        font-weight: 400;
+        font-size: 14px;
+        border: 1px solid #E0E2EC;
+        background-image: url("../img/icon/send.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: Calc(100% - 31px) 50%;
+    }
+}

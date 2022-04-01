@@ -1,0 +1,52 @@
+.footer {
+    &__row {
+        display: grid;
+        grid-template-columns: 150px auto 487px;
+        column-gap: 100px;
+        margin: 0;
+        padding-top: 45px;
+        @media (max-width: 1170px) {
+            grid-template-columns: 150px 1fr 1fr;
+            gap: 50px;
+        }
+        @media (max-width: 925px) {
+            grid-template-columns: 150px auto;
+            column-gap: 100px;
+        }
+        @media (max-width: 560px) {
+            grid-template-columns: 1fr;
+        }
+        &--flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 130px;
+        }
+    }
+    &__column {
+        max-width: 487px;
+        &--last { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;  
+            @media (max-width: 925px) {
+                grid-column: 1/-1;
+            }
+        }
+    }
+    &__link {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+        color: #2F3250;
+    }
+}
+
+/** ПОДКЛЮЧАЕМЫЕ БЛОКИ **/
+@import '../../blocks-bem/footer/logo/_logo.scss';
+@import '../../blocks-bem/footer/nav/_nav.scss';
+@import '../../blocks-bem/footer/subscribe/_subscribe.scss';
+@import '../../blocks-bem/footer/pay/_pay.scss';
