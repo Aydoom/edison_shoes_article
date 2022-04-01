@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Prosto+One&display=swap" rel="stylesheet">
+	<title>Edison shoes, articles</title>
+</head>
+<body>
+	<div class="page">
+		<!-- BEGIN HEADER SECTION -->
+		<header class="page__header">
+			<div class="container">
+				@@include('blocks-page/header/header.html')
+			</div>
+		</header>
+		<!-- END HEADER SECTION -->
+		<main class="page__body">		
+			<div class="container container__body">
+				<!-- BEGIN ASIDE SECTION -->
+				<section class="page__aside">
+					@@include('blocks-page/aside/aside.html')
+				</section>
+				<!-- END ASIDE SECTION -->
+				<!-- BEGIN ARTICLES SECTION -->
+				<section class="page__articles">
+					@@include('blocks-page/articles/articles.html')
+				</section>
+				<!-- END ARTICLES SECTION -->
+				<!-- BEGIN CATALOG SECTION -->
+				<section class="page__catalog">
+						@@include('blocks-page/catalog/catalog.html')
+				</section>
+				<!-- END CATALOG SECTION -->
+			</div>
+		</main>
+		<footer class="page__footer">
+			<div class="container">
+				@@include('blocks-page/footer/footer.html') 
+			</div>			
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html> 
